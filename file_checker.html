@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Integrity Checker</title>
+    <style>
+        #results, #log {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            overflow-wrap: anywhere;
+        }
+        #fileInput{
+          margin-bottom: 10px;
+        }
+        #scanButton{
+          margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Integrity Checker</h1>
+    <input type="file" id="fileInput" multiple>
+    <button id="scanButton">Scan Files</button>
+    <div id="results"></div>
+    <div id="log"></div>
+    <script src="file_checker.js"></script>
+</body>
+</html>
